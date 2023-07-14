@@ -6,6 +6,9 @@ import tsConfigPaths from "vite-tsconfig-paths";
 import * as packageJson from "./package.json";
 
 export default defineConfig(() => ({
+  test: {
+    globals: true, // < ==
+  },
   plugins: [
     react(),
     tsConfigPaths(),
@@ -18,19 +21,16 @@ export default defineConfig(() => ({
       entry: resolve("src", "index.ts"),
       name: "index",
       formats: ["es", "cjs"],
-      fileName: (format) =>
-        `index.${
-          format === "cjs" ? "cjs" : "es.js"
-        }`,
+      fileName: (format) => `index.${format === "cjs" ? "cjs" : "es.js"}`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
-          'react-dom': 'ReactDOM',
+          "react-dom": "ReactDOM",
         },
-      }
+      },
     },
     optimizeDeps: {
       exclude: Object.keys(packageJson.peerDependencies),

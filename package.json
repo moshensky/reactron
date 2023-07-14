@@ -23,6 +23,8 @@
     "lint:fix": "npm run lint -- --fix",
     "tsc": "tsc --noEmit --pretty",
     "tsc:watch": "npm run tsc -- --watch",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "update-deps": "npx npm-check-updates --configFileName .ncurc.js",
     "build": "vite build && npm run build:css",
     "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/styles.css",
@@ -97,6 +99,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.0",
     "vite-plugin-dts": "^3.2.0",
-    "vite-tsconfig-paths": "^4.2.0"
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.33.0"
   }
 }
