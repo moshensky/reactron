@@ -4,10 +4,11 @@ import { CropperState, CropScaleImage } from './CropScaleImage'
 import { testBase64ImageData } from './test-base64-image-data'
 import React from 'react'
 
-type Props = {}
+type Props = object
 
 type State = Readonly<{
   croppedObjectUrl?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   croppedBlob?: any
   cropperState: CropperState
 }>
@@ -37,6 +38,8 @@ export class TestCropScaleImage extends React.Component<Props, State> {
 
   render() {
     const { croppedObjectUrl, croppedBlob, cropperState } = this.state
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    const size = croppedBlob.size
 
     return (
       <>
@@ -51,7 +54,7 @@ export class TestCropScaleImage extends React.Component<Props, State> {
         <br />
         {croppedObjectUrl && cropperState === 'initialized' && (
           <>
-            <MemorySize value={croppedBlob.size} />
+            <MemorySize value={size} />
             <img className="rounded" src={croppedObjectUrl} style={{ maxWidth: '100%' }} />
           </>
         )}

@@ -26,6 +26,7 @@ export function Scrim({ open, backgroundColor, onClose }: Props) {
           style={{
             transition: `opacity ${ANIMATION_DURATION}ms`,
             opacity: 0,
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
             ...transitionStyles[state],
             position: 'absolute',
             top: 0,
