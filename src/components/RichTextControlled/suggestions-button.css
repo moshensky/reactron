@@ -1,0 +1,29 @@
+div.lw-suggestions-root {
+  min-width: 350px;
+}
+
+div.lw-suggestions-input > input {
+  width: 100%;
+}
+
+div.lw-suggestions-container {
+  margin-top: 4px;
+  cursor: pointer;
+  max-height: 300px; 
+  overflow: auto;
+}
+
+div.lw-suggestions-container > div:hover {
+  color: rgba(0,0,0,.95);
+  background: rgba(0,0,0,.03);
+}
+
+div.lw-suggestions-container > div {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+div.lw-suggestions-container > div:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}

@@ -1,0 +1,7 @@
+/* div.lw-array-form-control table tr.odd {
+  border-left: 2px solid red;
+} */
+
+div.lw-array-form-control table tr.even {
+  background-color: rgba(0,0,0,.05);
+}

@@ -1,0 +1,42 @@
+div.lw-popover {
+  max-width: 800px;
+  z-index: 1;
+}
+div.lw-popover > div.lw-arrow,
+div.lw-popover > div.lw-arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  z-index: -1;
+}
+
+div.lw-popover > div.lw-arrow::before {
+  content: '';
+  background: white;
+  transform: rotate(45deg);
+  border-left: 1px solid rgba(156, 163, 175, 1); 
+  border-top: 1px solid rgba(156, 163, 175, 1); 
+}
+
+div.lw-popover > div.lw-arrow.header::before {
+  background: rgba(243, 244, 246, 1);
+}
+
+div.lw-popover[data-popper-placement^='top'] > div.lw-arrow {
+  bottom: -4px;
+}
+div.lw-popover[data-popper-placement^='top'] > div.lw-arrow::before {
+  transform: rotate(225deg);
+}
+
+div.lw-popover[data-popper-placement^='bottom'] > div.lw-arrow {
+  top: -4px;
+}
+
+div.lw-popover[data-popper-placement^='left'] > div.lw-arrow {
+  right: -4px;
+}
+
+div.lw-popover[data-popper-placement^='right'] > div.lw-arrow {
+  left: -4px;
+}
