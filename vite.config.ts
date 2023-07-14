@@ -1,9 +1,9 @@
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
-import { defineConfig } from "vite";
-import dts from "vite-plugin-dts";
-import tsConfigPaths from "vite-tsconfig-paths";
-import * as packageJson from "./package.json";
+import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
+import tsConfigPaths from 'vite-tsconfig-paths'
+import * as packageJson from './package.json'
 
 export default defineConfig(() => ({
   test: {
@@ -13,22 +13,22 @@ export default defineConfig(() => ({
     react(),
     tsConfigPaths(),
     dts({
-      include: ["src"],
+      include: ['src'],
     }),
   ],
   build: {
     lib: {
-      entry: resolve("src", "index.ts"),
-      name: "index",
-      formats: ["es", "cjs"],
-      fileName: (format) => `index.${format === "cjs" ? "cjs" : "es.js"}`,
+      entry: resolve('src', 'index.ts'),
+      name: 'index',
+      formats: ['es', 'cjs'],
+      fileName: (format) => `index.${format === 'cjs' ? 'cjs' : 'es.js'}`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ['@mdi/js', '@mdi/react', 'fp-ts', 'io-ts', 'react', 'react-dom'],
       output: {
         globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+          react: 'React',
+          'react-dom': 'ReactDOM',
         },
       },
     },
@@ -39,4 +39,4 @@ export default defineConfig(() => ({
       minify: true,
     },
   },
-}));
+}))
