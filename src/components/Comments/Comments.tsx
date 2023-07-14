@@ -1,10 +1,10 @@
 import { Guid } from '../../types'
 import classNames from 'classnames'
-
 import { Card, CardBody } from '../Card'
 import { Comment } from './Comment'
 import { WriteComment } from './WriteComment'
 import { WriteCommentStub } from './WriteCommentStub'
+import React from 'react'
 
 export type Comment = Readonly<{
   id: Guid

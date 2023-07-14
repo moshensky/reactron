@@ -1,6 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Pager } from '../../types'
-
-import { range } from '../utils'
+import { range } from '../../utils'
 import './pagination.css'
 import { SelectInput } from '../SelectInput'
 

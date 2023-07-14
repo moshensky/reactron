@@ -1,5 +1,5 @@
 import Transition, { TransitionStatus } from 'react-transition-group/Transition'
-import { rgba } from '../utils/rgba'
+import { rgba } from '../../utils'
 
 const ANIMATION_DURATION = 150
 

@@ -3,6 +3,7 @@ import { CropScaleImage } from '../../CropScaleImage'
 import { FileImagePreview } from '../../FileImagePreview'
 
 import { DropImage } from './DropImage'
+import { useState } from 'react'
 
 type Props = {
   invalid?: boolean
@@ -24,7 +25,7 @@ type State =
     }>
 
 export function ImagePreview({ invalid, disabled, onChange }: Props): JSX.Element {
-  const [state, setState] = React.useState<State>({
+  const [state, setState] = useState<State>({
     type: 'selecting-image',
   })
 

@@ -2,7 +2,7 @@ import { pipe } from 'fp-ts/lib/function'
 import * as E from 'fp-ts/lib/Either'
 import { ValuePath, Validator } from './validate'
 import { isValid as dfIsValid, isDate } from 'date-fns'
-import { isNil, not } from '../utils'
+import { isNil, not } from '../../utils'
 import { isRichTextEmpty, RichText } from '../../types'
 
 function isEmpty(variable: unknown): boolean {

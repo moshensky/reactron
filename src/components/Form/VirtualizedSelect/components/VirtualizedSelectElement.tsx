@@ -8,6 +8,7 @@ import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import './VirtualizedSelect.css'
 import { pipe } from 'fp-ts/lib/function'
 import * as O from 'fp-ts/lib/Option'
+import React from 'react'
 
 type VirtualizedSelectElementProps<T> = Readonly<{
   items: T[]
@@ -22,7 +23,7 @@ type VirtualizedSelectElementProps<T> = Readonly<{
   onChange: (item?: T | null) => void
 }>
 
-const filterItems = <T extends {}>(allItems: T[], inputValue: string | null | undefined): T[] =>
+const filterItems = <T extends object>(allItems: T[], inputValue: string | null | undefined): T[] =>
   inputValue
     ? matchSorter(allItems, inputValue, {
         // FIXME: specify that T must have a name or generalize it
@@ -65,7 +66,7 @@ export function VirtualizedSelectElement<T>({
     itemToString,
     initialSelectedItem: pipe(
       O.fromNullable(selectedItem),
-      O.map((x) => filteredItems.find((y) => (y[keyName] as any) === x)),
+      O.map((x) => filteredItems.find((y) => (y[keyName] as unknown) === x)),
       O.toUndefined,
     ),
     // TODO: throttle when list is too big
@@ -74,6 +75,8 @@ export function VirtualizedSelectElement<T>({
       if (isOpen === false && selectedItem && itemToString(selectedItem) === inputValue) {
         setFilteredItems(items)
       } else {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         setFilteredItems(filterItems(items, inputValue))
       }
     },
@@ -135,6 +138,7 @@ export function VirtualizedSelectElement<T>({
                     {...getItemProps({
                       item,
                       index,
+                      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
                       key: `${item[keyName]}`,
                       style,
                       isSelected: selectedItem === item[keyName],

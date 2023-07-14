@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import cn from 'classnames'
 import { calcMaxPageNumber, capPageNumber, Pagination } from '../Pagination'
 import * as O from 'fp-ts/lib/Option'
@@ -8,6 +9,7 @@ import { Alert } from '../Alerts'
 import { TableContainer } from './TableContainer'
 import { TableHead } from './TableHead'
 import { TableBody } from './TableBody'
+import React from 'react'
 
 export type RemotePagination = Readonly<{
   type: 'remote'

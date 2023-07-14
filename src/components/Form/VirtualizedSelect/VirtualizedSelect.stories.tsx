@@ -1,13 +1,13 @@
 import { action } from '@storybook/addon-actions'
 
-import { DelayedData } from '../../utils'
+import { DelayedData } from '../../../utils'
 import { StorybookForm } from '../StorybookForm.test.support'
 import { VirtualizedSelectElement } from './components/VirtualizedSelectElement'
 import { VirtualizedSelect } from './VirtualizedSelect'
 import {
   IndicatorViewModel,
   indicatorsSyncModel,
-} from 'VirtualizedList/VirtualizedList.data.support.test'
+} from '../../VirtualizedList/VirtualizedList.data.support.test'
 
 const data = [...indicatorsSyncModel]
 const smallData = indicatorsSyncModel.slice(0, 30)

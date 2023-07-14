@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Scrim } from '../Scrim/Scrim'
-import { rgba } from '../utils'
+import { rgba } from '../../utils'
 
 type Props = Readonly<{
   zIndex?: number

@@ -34,6 +34,7 @@ export function TextInputWithButtons({
         isInEditMode: isNil(text),
       }}
       render={({ handleSubmit, values }) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
         const inputCN = cn(
           'bg-clip-padding border rounded border-gray-300 rounded-r-none',
           {

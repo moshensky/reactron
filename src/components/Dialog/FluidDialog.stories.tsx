@@ -1,7 +1,6 @@
 import { action } from '@storybook/addon-actions'
-import * as React from 'react'
 import { FluidDialog } from './FluidDialog'
-import { range } from '../utils'
+import { range } from '../../utils'
 
 const longContent = range(0, 100).reduce((acc) => acc + ' very long content', '')
 

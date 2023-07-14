@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { mdiDatabaseSearchOutline } from '@mdi/js'
 import { ToolbarButton } from './ToolbarButton'
 import { Popover } from '../Popover'

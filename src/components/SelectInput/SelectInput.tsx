@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import cn from 'classnames'
-import { useOnClickOutside } from '../hooks'
+import { useOnClickOutside } from '../../hooks'
 import { FaIcon } from '../FaIcon'
 import { getOrElse, map, fromNullable } from 'fp-ts/lib/Option'
 import { pipe } from 'fp-ts/lib/function'
@@ -64,6 +64,7 @@ export function SelectInput({
       >
         <span className="flex items-center">
           {pipe(
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             fromNullable(options.find((x) => x.value === `${value}`)),
             map((x) => x.label),
             getOrElse<React.ReactNode>(() => <>&nbsp;</>),

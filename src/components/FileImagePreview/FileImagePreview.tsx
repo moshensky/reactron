@@ -1,3 +1,5 @@
+import { Component } from 'react'
+
 type Props = Readonly<{
   file: File
 }>
@@ -7,7 +9,7 @@ type State = Readonly<{
   name: string
 }>
 
-export class FileImagePreview extends React.Component<Props, State> {
+export class FileImagePreview extends Component<Props, State> {
   static getDerivedStateFromProps({ file }: Props, { objectUrl }: State): State | null {
     URL.revokeObjectURL(objectUrl)
 

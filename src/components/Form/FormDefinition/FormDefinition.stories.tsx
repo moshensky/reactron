@@ -7,7 +7,7 @@ import { UpdateCalibrationCertificatesForm } from './UpdateCalibrationCertificat
 import { LWForm, LabelWithValue } from './types'
 import { passwordValidator, requiredValidator } from '../common-validators'
 import { FormDefinition } from './FormDefinition'
-import { range } from '../../utils'
+import { range } from '../../../utils'
 import { MultiselectOptions } from '../../MultiSelect'
 import {
   CalibrationCertificate,

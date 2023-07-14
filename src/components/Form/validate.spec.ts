@@ -90,7 +90,7 @@ describe('ifArrayAtPathForEach()', () => {
     const model = {
       a: [1, 2],
     }
-    const cb = jest.fn()
+    const cb = vitest.fn()
     ifArrayAtPathForEach(path, model, cb)
     expect(cb).toHaveBeenCalled()
     expect(cb).toHaveBeenCalledTimes(2)
@@ -110,7 +110,7 @@ describe('ifArrayAtPathForEach()', () => {
         },
       ],
     }
-    const cb = jest.fn()
+    const cb = vitest.fn()
     ifArrayAtPathForEach(path, model, cb)
     expect(cb).toHaveBeenCalled()
     expect(cb).toHaveBeenCalledTimes(4)
@@ -125,7 +125,7 @@ describe('ifArrayAtPathForEach()', () => {
     const model = {
       a: {},
     }
-    const cb = jest.fn()
+    const cb = vitest.fn()
     ifArrayAtPathForEach(path, model, cb)
     expect(cb).toHaveBeenCalledTimes(0)
   })

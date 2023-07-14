@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions'
 
 import { SuggestionsButton } from './SuggestionsButton'
-import { richTextSuggestions } from 'types/rich-text/rich-text.support.test'
+import { richTextSuggestions } from '../../types/rich-text/rich-text.support.test'
 
 export default {
   title: 'common/RichTextControlled/SuggestionsButton',

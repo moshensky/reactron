@@ -1,9 +1,8 @@
 import { MemorySize } from '../MemorySize'
-
-import { dataURLtoFile } from '../utils'
-
+import { dataURLtoFile } from '../../utils'
 import { CropperState, CropScaleImage } from './CropScaleImage'
 import { testBase64ImageData } from './test-base64-image-data'
+import React from 'react'
 
 type Props = {}
 

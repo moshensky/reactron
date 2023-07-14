@@ -1,5 +1,4 @@
 import { action } from '@storybook/addon-actions'
-import * as React from 'react'
 import { SortableMultipleContainers } from './SortableMultipleContainers'
 import { SortableGroups } from '../../types'
 

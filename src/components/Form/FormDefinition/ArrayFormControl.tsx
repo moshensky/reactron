@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import { Button, ConfirmButton } from '../../Buttons'
 import { RequiredSymbol } from '../../RequiredSymbol'
 import { FieldState, FormApi } from 'final-form'
@@ -16,6 +21,8 @@ const secondaryTDStyle = {
 const mkFieldName =
   (fieldName: string) =>
   <T, K extends keyof T>({ name }: FormControl<UnpackArrayType<T[K]>>): string =>
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     `${fieldName}.${name}`
 
 const hasFieldError = (x?: FieldState<any>): boolean =>
@@ -47,6 +54,7 @@ function renderTableViewType<T, K extends keyof T>({
           <thead>
             <tr>
               {items.map((x) => (
+                // @ts-ignore FIXME any
                 <th key={`${x.name}.label`} className={x.labelClassName}>
                   {x.label}
                   {x.required && <RequiredSymbol />}
@@ -104,7 +112,7 @@ function renderTableViewType<T, K extends keyof T>({
                       style={secondaryTDStyle}
                     >
                       {secondaryItems.map((x) => {
-                        // @ts-ignore FIXME any
+                        // @ts-ignore
                         const x1 = x as any
                         return getFormControl(x1, `${fieldName}.`)
                       })}
@@ -173,8 +181,10 @@ function renderColumnViewType<T, K extends keyof T>({
                 const mkFieldNameC = mkFieldName(fieldName)
                 const hasRowErrors =
                   items.map(mkFieldNameC).map(form.getFieldState).filter(hasFieldError).length > 0
-                // @ts-ignore FIXME any
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
                 const x1 = x as any
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
                 const control = getFormControl(x1, `${fieldName}.`, 'column', false, tValue)
                 const innerFieldName = mkFieldNameC(x)
                 const hasError = hasFieldError(form.getFieldState(innerFieldName))
@@ -215,6 +225,7 @@ export function ArrayFormControl<T, K extends keyof T>(props: Props<T, K>) {
         {allowAddingOrDeletingElements && (
           <Button
             className="ml-auto mb-1 btn-sm"
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-return
             onClick={() => form.mutators.push(formControlName, mkEmpty())}
             variant="secondary"
             label={props.addRowLabel || 'Add row'}

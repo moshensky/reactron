@@ -1,8 +1,8 @@
 import { mdiScissorsCutting } from '@mdi/js'
 import { Button } from '../Buttons'
 import Cropper from 'cropperjs'
-
 import 'cropperjs/dist/cropper.css'
+import { Component } from 'react'
 
 export type CropperState = 'initializing' | 'initialized' | 'processing'
 
@@ -40,7 +40,7 @@ const scaleImage = (canvas: HTMLCanvasElement, maxWidth: number): HTMLCanvasElem
   return canvas
 }
 
-export class CropScaleImage extends React.Component<Props, State> {
+export class CropScaleImage extends Component<Props, State> {
   objectUrl = URL.createObjectURL(this.props.file)
 
   img: HTMLImageElement | null = null

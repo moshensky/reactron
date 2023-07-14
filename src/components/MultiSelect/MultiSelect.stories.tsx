@@ -4,6 +4,7 @@ import { MultiSelect } from './MultiSelect'
 import { MultiselectOptions } from './types'
 import { Tag } from './Tag'
 import { indicatorsSyncModel } from '../VirtualizedList/VirtualizedList.data.support.test'
+import React from 'react'
 
 export const basic: MultiselectOptions = ['first', 'second', 'third'].map((x) => ({
   id: `id_${x}`,

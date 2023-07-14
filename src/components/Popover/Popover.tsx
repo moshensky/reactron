@@ -1,7 +1,8 @@
 import { createPopper, Instance } from '@popperjs/core'
 import './popover.css'
-import { useOnClickOutside } from 'hooks'
+import { useOnClickOutside } from '../../hooks'
 import cn from 'classnames'
+import React from 'react'
 
 type Props = {
   className?: string

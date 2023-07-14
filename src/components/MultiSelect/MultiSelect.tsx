@@ -1,11 +1,12 @@
 import { MultiselectOptions } from './types'
 import { Input } from './Input'
-import { not } from '../utils'
+import { not } from '../../utils'
 import { Tags } from './Tags'
 import { Container } from './Container'
 import { Item } from './Item'
 import { VirtualizedList } from '../VirtualizedList'
 import { ActionType, useMultiselect } from './reducer'
+import React from 'react'
 
 type Props = Readonly<{
   initialSelected: MultiselectOptions

@@ -1,5 +1,5 @@
 import { subWeeks } from 'date-fns'
-import { range } from '../../utils'
+import { range } from '../../../utils'
 
 export type CalibrationCertificate = {
   id: string

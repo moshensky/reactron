@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react'
 import { MessageType } from '../../types'
 import cn from 'classnames'
 
@@ -7,6 +7,7 @@ type Props = Readonly<{
   type: MessageType
 }>
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const getAlertClasses = (x: MessageType): string => {
   switch (x) {
     case 'danger': {

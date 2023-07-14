@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import { Bool } from '../Bool'
 import { BoolWithAll } from '../BoolWithAll'
 import { DateField, DateTimeField } from '../DateTimeFields'
@@ -9,7 +13,7 @@ import { TextField } from '../TextField'
 import { VirtualizedSelect } from '../VirtualizedSelect'
 import { FormApi } from 'final-form'
 import arrayMutators from 'final-form-arrays'
-import { isNil, not } from '../../utils'
+import { isNil, not } from '../../../utils'
 
 import { Form } from 'react-final-form'
 import { ArrayFormControl } from './ArrayFormControl'
@@ -18,11 +22,13 @@ import { SelectField } from '../SelectField'
 import { mdiContentSaveOutline, mdiPlusThick } from '@mdi/js'
 import { ArrayValidations, validate, Validator } from '../validate'
 import { Button } from '../../Buttons'
+import React from 'react'
 
 const itemToString = (item: IdWithName | null) => {
   return item ? item.name : ''
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function renderForm(form: FormApi) {
   return function getFormControl<T>(
     item: FormControl<T>,
@@ -33,6 +39,8 @@ export function renderForm(form: FormApi) {
   ): React.ReactNode {
     // todo: use labelClassName
     const { label, name, required, className, readonly, style } = item
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const formControlName = `${namePrefix}${name}`
     switch (item.type) {
       case 'CustomRender': {
@@ -233,6 +241,8 @@ export function renderForm(form: FormApi) {
       }
       case 'Nested': {
         const { items } = item
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         return items.map((x) => getFormControl(x, `${name}.`, 'column', true, tValue))
       }
       case 'Array': {
@@ -277,7 +287,9 @@ function toFieldValidator<T>(item: FormControl<T>): Validator {
   const validator = item.validate!
   return isValidator(validator)
     ? validator
-    : [[`${item.name}`], validator.errorMsg, validator.validator]
+    : // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      [[`${item.name}`], validator.errorMsg, validator.validator]
 }
 
 function toValidations<T>(items: ReadonlyArray<FormControl<T>>) {
@@ -335,10 +347,12 @@ export function FormDefinition<T>({
     items.filter((x) => x.validate !== undefined && FormControl.isNestedType(x)),
   )
   const arrayValidations: ArrayValidations = items
+    // eslint-disable-next-line @typescript-eslint/unbound-method
     .filter(FormControl.isArrayFormControl)
     .map((x) => {
       const primaryItemsValidation: ArrayValidations = [
         {
+          // @ts-ignore
           pathToArray: [`${x.name}`],
           validations: toValidations(x.items.filter((y) => y.validate !== undefined)),
         },
@@ -350,6 +364,7 @@ export function FormDefinition<T>({
         if (firstSecondaryItem.type === 'Array') {
           const secondaryItemsValidation: ArrayValidations = [
             {
+              // @ts-ignore
               pathToArray: [`${x.name}`, '*', `${firstSecondaryItem.name}`],
               validations: toValidations(
                 firstSecondaryItem.items.filter((y) => y.validate !== undefined),
@@ -378,6 +393,7 @@ export function FormDefinition<T>({
       initialValues={model ? Object.assign({}, model) : mkEmpty()}
       validate={validate([...validations, ...nestedValidations, ...nestedItems], arrayValidations)}
       // FIXME enable only when there is an `Array` field type
+      // @ts-ignore
       mutators={{ ...arrayMutators }}
       render={({ handleSubmit, submitting, pristine, form }) => {
         const getFormControl = renderForm(form)

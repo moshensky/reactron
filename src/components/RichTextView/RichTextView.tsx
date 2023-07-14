@@ -1,4 +1,4 @@
-import { Mark, ParagraphNode, RichText, TextNode } from 'types/rich-text'
+import { Mark, ParagraphNode, RichText, TextNode } from '../../types'
 
 const renderLeaf = (node: TextNode, idx: number): JSX.Element => {
   const El = node[Mark.Superscript] ? 'sup' : node[Mark.Subscript] ? 'sub' : 'span'

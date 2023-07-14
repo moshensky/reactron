@@ -1,3 +1,4 @@
+import React from 'react'
 import { Action, ActionType } from './reducer'
 
 type Props = Readonly<{

@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import { Action, ActionType } from './reducer'
+import React from 'react'
 
 type Props = Readonly<{
   isFocused: boolean

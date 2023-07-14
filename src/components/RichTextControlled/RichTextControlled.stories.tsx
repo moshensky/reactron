@@ -1,10 +1,10 @@
 import { RichText, RichText as RichTextT } from '../../types'
 import { action } from '@storybook/addon-actions'
-import React, { useState } from 'react'
-import { DelayedData } from '../utils'
+import { useState } from 'react'
+import { DelayedData } from '../../utils'
 import { RichTextControlled } from './RichTextControlled'
 import { Symbols } from './Symbols'
-import { richTextData, richTextSuggestions } from 'types/rich-text/rich-text.support.test'
+import { richTextData, richTextSuggestions } from '../../types/rich-text/rich-text.support.test'
 
 const richTextSample1: RichTextT = [
   {

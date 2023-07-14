@@ -1,7 +1,7 @@
 import { FormDefinition, LWForm } from '../FormDefinition'
 import { requiredValidator } from '../common-validators'
 
-import { GuidGenerationService } from '../../utils'
+import { GuidGenerationService } from '../../../utils'
 import { Card, CardBody } from '../../Card'
 import { TechnicalToolData } from './data.support.test'
 

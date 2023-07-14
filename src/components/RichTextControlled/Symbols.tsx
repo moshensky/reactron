@@ -1,4 +1,8 @@
-import { symbols, utf8SubscriptNumbers, utf8SuperscriptNumbers } from '../types/rich-text/symbols'
+import {
+  symbols,
+  utf8SubscriptNumbers,
+  utf8SuperscriptNumbers,
+} from '../../types/rich-text/symbols'
 
 type Props = Readonly<{
   disableRichText?: boolean

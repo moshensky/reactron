@@ -1,5 +1,5 @@
 import { RichTextView } from './RichTextView'
-import { richTextData } from 'types/rich-text/rich-text.support.test'
+import { richTextData } from '../../types/rich-text/rich-text.support.test'
 
 export default {
   title: 'common/RichTextView',

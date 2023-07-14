@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import React, { ElementType, useEffect, useState } from 'react'
+import { ElementType, useEffect, useState } from 'react'
 import {
   UniqueIdentifier,
   DndContext,
