@@ -4,7 +4,7 @@ import { RichTextControlled } from '../../RichTextControlled'
 import { RichTextView } from '../../RichTextView'
 import React, { useState } from 'react'
 import { not } from '../../utils'
-import { isRichTextEmpty, RichText } from '../../types'
+import { isRichTextEmpty, RichText } from '../../../types'
 import { mdiContentSaveOutline, mdiLeadPencil } from '@mdi/js'
 
 type Props = Readonly<{

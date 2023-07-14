@@ -1,5 +1,4 @@
-import React from 'react'
-import { MessageType } from '../types'
+import { MessageType } from '../../types'
 import { Alert } from './Alert'
 
 const types: ReadonlyArray<MessageType> = ['danger', 'info', 'success', 'warning']

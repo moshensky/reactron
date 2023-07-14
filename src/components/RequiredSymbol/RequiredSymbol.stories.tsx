@@ -1,4 +1,3 @@
-import React from 'react'
 import { RequiredSymbol } from './RequiredSymbol'
 
 export default {

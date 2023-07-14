@@ -1,6 +1,6 @@
-import React from 'react'
 import { createPopper, Instance, Options } from '@popperjs/core'
 import './tooltip.css'
+import React from 'react'
 
 type Props = {
   className?: string
@@ -41,6 +41,7 @@ export function Tooltip({ children, className, tooltip }: Props) {
   const tooltipRef = React.createRef<HTMLDivElement>()
 
   React.useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/unbound-method
     const { setHideTimeout, clearHideTimeout } = mkTimeout()
     let popperInstance: Instance
     const target = targetRef.current

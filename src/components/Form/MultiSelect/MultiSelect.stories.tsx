@@ -1,4 +1,3 @@
-import React from 'react'
 import { MultiSelect } from './MultiSelect'
 import { options, basic } from '../../MultiSelect/MultiSelect.stories'
 import { StorybookForm } from '../StorybookForm.test.support'

@@ -1,8 +1,8 @@
 import cn from 'classnames'
 import { Button } from '../Buttons'
-import React from 'react'
+
 import { Field, Form } from 'react-final-form'
-import { isNil, not } from 'utils'
+import { isNil, not } from '../../utils'
 import { mdiContentSaveOutline, mdiLeadPencil } from '@mdi/js'
 
 type Props = Readonly<{

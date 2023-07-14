@@ -1,5 +1,5 @@
 import { indicatorsSyncModel } from './VirtualizedList.data.support.test'
-import React from 'react'
+
 import { VirtualizedList } from './VirtualizedList'
 import { ListChildComponentProps } from 'react-window'
 

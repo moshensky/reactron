@@ -1,6 +1,6 @@
 import { MemorySize } from '../../MemorySize'
 import { RequiredSymbol } from '../../RequiredSymbol'
-import React from 'react'
+
 import { Field } from 'react-final-form'
 import { DropFiles } from './DropFiles'
 

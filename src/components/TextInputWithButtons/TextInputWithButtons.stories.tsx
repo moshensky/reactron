@@ -1,4 +1,3 @@
-import React from 'react'
 import { TextInputWithButtons } from './TextInputWithButtons'
 import { action } from '@storybook/addon-actions'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { TableFilter } from './TableFilter'
 
 export default {

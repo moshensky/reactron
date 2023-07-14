@@ -1,9 +1,9 @@
-import React, { ElementType } from 'react'
+import { ElementType } from 'react'
 import { useDroppable } from '@dnd-kit/core'
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 
 import { SortableItem } from './SortableItem'
-import { SortableGroup, WithId } from '../types'
+import { SortableGroup, WithId } from '../../types'
 
 type Props<T extends WithId> = {
   group: SortableGroup<T>
@@ -23,6 +23,7 @@ export function SortableList<T extends WithId>({
   onItemRender,
 }: Props<T>) {
   const { id, items } = group
+
   const { setNodeRef } = useDroppable({ id })
 
   const elements = items.map((x) => (
@@ -31,9 +32,11 @@ export function SortableList<T extends WithId>({
     </SortableItem>
   ))
 
+  const groupRender = onGroupRender(group, setNodeRef, elements)
+
   return (
     <SortableContext id={id} items={items} strategy={verticalListSortingStrategy}>
-      {onGroupRender(group, setNodeRef, elements)}
+      {groupRender}
     </SortableContext>
   )
 }

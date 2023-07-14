@@ -2,7 +2,7 @@ import { FaIcon } from '../../../FaIcon'
 import { VirtualizedList } from '../../../VirtualizedList'
 import { useCombobox, UseComboboxState } from 'downshift'
 import { matchSorter } from 'match-sorter'
-import React from 'react'
+
 import { ControllerButton, Input, Item } from './index'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import './VirtualizedSelect.css'

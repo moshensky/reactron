@@ -10,7 +10,7 @@ import { VirtualizedSelect } from '../VirtualizedSelect'
 import { FormApi } from 'final-form'
 import arrayMutators from 'final-form-arrays'
 import { isNil, not } from '../../utils'
-import React from 'react'
+
 import { Form } from 'react-final-form'
 import { ArrayFormControl } from './ArrayFormControl'
 import { FormControl, IdWithName, LWForm, LWFormItemValidate, ViewType } from './types'
@@ -273,7 +273,7 @@ function isValidator<T>(
 
 function toFieldValidator<T>(item: FormControl<T>): Validator {
   // FIXME
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
   const validator = item.validate!
   return isValidator(validator)
     ? validator
@@ -328,7 +328,7 @@ export function FormDefinition<T>({
     .reduce((acc, val) => [...acc, ...val], [])
     .filter((y) => y.validate !== undefined)
     // FIXME
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
     .map((x) => x.validate! as Validator)
 
   const nestedValidations: ReadonlyArray<Validator> = toValidations(

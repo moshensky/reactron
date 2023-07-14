@@ -1,6 +1,5 @@
 import { matchSorter } from 'match-sorter'
 import { MultiselectOptions } from './types'
-import React from 'react'
 
 export enum ActionType {
   optionsChanged = 'optionsChanged',

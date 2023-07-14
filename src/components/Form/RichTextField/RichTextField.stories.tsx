@@ -1,5 +1,5 @@
-import { mkRichText } from '../../types'
-import React from 'react'
+import { mkRichText } from '../../../types'
+
 import { StorybookForm } from '../StorybookForm.test.support'
 import { RichTextField } from './RichTextField'
 

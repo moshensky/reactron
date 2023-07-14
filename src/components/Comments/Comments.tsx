@@ -1,6 +1,6 @@
-import { Guid } from '../types'
+import { Guid } from '../../types'
 import classNames from 'classnames'
-import React from 'react'
+
 import { Card, CardBody } from '../Card'
 import { Comment } from './Comment'
 import { WriteComment } from './WriteComment'

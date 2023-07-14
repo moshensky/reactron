@@ -1,4 +1,3 @@
-import React from 'react'
 import { FluidDialog } from './FluidDialog'
 
 const styles = {

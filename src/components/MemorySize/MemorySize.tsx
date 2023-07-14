@@ -1,5 +1,3 @@
-import React from 'react'
-
 // TODO: evaluate function
 // const formatBytes = (n: number, digits?: number) => {
 //   if (0 === n) return '0 Bytes'

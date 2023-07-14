@@ -1,7 +1,6 @@
 import { mdiClose } from '@mdi/js'
 import classNames from 'classnames'
 import { FaIcon } from '../FaIcon'
-import React from 'react'
 
 type Props = Readonly<{
   children?: React.ReactNode

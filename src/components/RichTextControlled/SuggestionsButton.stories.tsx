@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { SuggestionsButton } from './SuggestionsButton'
 import { richTextSuggestions } from 'types/rich-text/rich-text.support.test'
 

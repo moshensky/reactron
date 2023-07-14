@@ -1,5 +1,5 @@
 import { isNotEmpty } from '../Form'
-import React from 'react'
+
 import { Tabs } from '../Tabs'
 import { TextArea } from '../TextArea'
 import { Button } from '../Buttons'

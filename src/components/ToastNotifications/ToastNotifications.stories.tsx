@@ -1,4 +1,3 @@
-import React from 'react'
 import { ToastNotifications } from './ToastNotifications'
 import { Toast } from './Toast'
 import { action } from '@storybook/addon-actions'

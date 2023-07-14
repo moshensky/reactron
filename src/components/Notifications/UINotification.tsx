@@ -1,5 +1,3 @@
-import React from 'react'
-
 export type UINotification = Readonly<{
   id: string
   title: React.ReactNode

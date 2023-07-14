@@ -1,7 +1,7 @@
 import { Card, CardBody } from '../../Card'
 import { FormDefinition } from './FormDefinition'
 import { LWForm } from './types'
-import React from 'react'
+
 import {
   FetchTechnicalToolsWorkLoadReportPayload,
   TechnicalToolModel,

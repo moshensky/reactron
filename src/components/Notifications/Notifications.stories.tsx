@@ -1,4 +1,3 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { Notifications } from './Notifications'
 import { UINotification } from './UINotification'

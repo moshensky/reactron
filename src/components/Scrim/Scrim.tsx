@@ -1,4 +1,3 @@
-import React from 'react'
 import Transition, { TransitionStatus } from 'react-transition-group/Transition'
 import { rgba } from '../utils/rgba'
 

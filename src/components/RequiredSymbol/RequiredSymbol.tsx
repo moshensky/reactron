@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaIcon } from '../FaIcon'
 import { mdiAsterisk } from '@mdi/js'
 

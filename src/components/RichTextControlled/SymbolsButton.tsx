@@ -1,4 +1,3 @@
-import React from 'react'
 import { mdiOmega } from '@mdi/js'
 import { ToolbarButton } from './ToolbarButton'
 import { Popover } from '../'

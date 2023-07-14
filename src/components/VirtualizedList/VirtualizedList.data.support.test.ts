@@ -1,4 +1,4 @@
-import { mkRichText, RichText } from 'types'
+import { mkRichText, RichText } from '../../types'
 
 export type IndicatorViewModel = {
   indicatorId: number

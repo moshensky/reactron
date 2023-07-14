@@ -1,7 +1,7 @@
 import { mdiScissorsCutting } from '@mdi/js'
 import { Button } from '../Buttons'
 import Cropper from 'cropperjs'
-import React from 'react'
+
 import 'cropperjs/dist/cropper.css'
 
 export type CropperState = 'initializing' | 'initialized' | 'processing'

@@ -1,7 +1,7 @@
 import { Button, ConfirmButton } from '../../Buttons'
 import { RequiredSymbol } from '../../RequiredSymbol'
 import { FieldState, FormApi } from 'final-form'
-import React from 'react'
+
 import { FieldArray } from 'react-final-form-arrays'
 import { ArrayFormControl, FormControl, GetFormControl, UnpackArrayType } from './types'
 import './array-form-control.css'

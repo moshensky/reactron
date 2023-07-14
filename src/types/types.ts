@@ -27,7 +27,7 @@ export enum GUIDTag {}
 // export type Guid = string & GUIDTag
 export type Guid = string
 export const Guid = {
-  of: (value: string) => value as Guid,
+  of: (value: string) => value,
 }
 
 /**

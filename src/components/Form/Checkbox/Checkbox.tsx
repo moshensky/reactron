@@ -1,5 +1,5 @@
 import { BoolView } from '../../BoolView'
-import React from 'react'
+
 import { Field } from 'react-final-form'
 
 type Props = Readonly<{

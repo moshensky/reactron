@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaIcon } from '../FaIcon'
 import { Avatar } from './Avatar'
 import { mdiDotsHorizontal, mdiLeadPencil, mdiTrashCanOutline } from '@mdi/js'

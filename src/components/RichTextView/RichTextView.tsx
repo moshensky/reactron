@@ -1,4 +1,3 @@
-import React from 'react'
 import { Mark, ParagraphNode, RichText, TextNode } from 'types/rich-text'
 
 const renderLeaf = (node: TextNode, idx: number): JSX.Element => {

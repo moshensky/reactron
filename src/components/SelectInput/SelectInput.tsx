@@ -5,7 +5,7 @@ import { FaIcon } from '../FaIcon'
 import { getOrElse, map, fromNullable } from 'fp-ts/lib/Option'
 import { pipe } from 'fp-ts/lib/function'
 import { mdiCheck, mdiChevronDown, mdiChevronUp } from '@mdi/js'
-import { SelectOptions } from '../types'
+import { SelectOptions } from '../../types'
 
 type Props = Readonly<{
   className?: string

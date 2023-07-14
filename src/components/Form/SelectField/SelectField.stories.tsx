@@ -1,6 +1,6 @@
-import { mkRichText } from '../../types'
+import { mkRichText } from '../../../types'
 import { RichTextView } from '../../RichTextView'
-import React from 'react'
+
 import { StorybookForm } from '../StorybookForm.test.support'
 import { SelectField, Props } from './SelectField'
 

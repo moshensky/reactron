@@ -1,5 +1,5 @@
-import { Pager } from '../types'
-import React from 'react'
+import { Pager } from '../../types'
+
 import { range } from '../utils'
 import './pagination.css'
 import { SelectInput } from '../SelectInput'

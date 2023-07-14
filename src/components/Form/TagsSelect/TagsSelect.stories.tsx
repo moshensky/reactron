@@ -1,4 +1,3 @@
-import React from 'react'
 import { StorybookForm } from '../StorybookForm.test.support'
 import { TagsSelect } from './TagsSelect'
 

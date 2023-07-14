@@ -11,7 +11,7 @@ import {
 import { mkCustomEditor, toggleMark } from './custom-editor'
 import { Toolbar } from './Toolbar'
 import isHotkey from 'is-hotkey'
-import { Mark, ParagraphNode, RichText as RichTextT, TextNode } from '../types'
+import { Mark, ParagraphNode, RichText as RichTextT, TextNode } from '../../types'
 
 declare module 'slate' {
   interface CustomTypes {

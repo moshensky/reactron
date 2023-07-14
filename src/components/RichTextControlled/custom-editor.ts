@@ -1,4 +1,4 @@
-import { Mark } from '../types'
+import { Mark } from '../../types'
 import { Editor } from 'slate'
 
 const isMarkActive =

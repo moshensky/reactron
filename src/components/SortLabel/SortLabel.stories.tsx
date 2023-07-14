@@ -1,6 +1,6 @@
-import { SortDirection } from '../types'
+import { SortDirection } from '../../types'
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { SortLabel } from './SortLabel'
 
 export default {

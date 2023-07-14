@@ -1,7 +1,6 @@
-import React from 'react'
 import classNames from 'classnames'
 import { RequiredSymbol } from '../../RequiredSymbol'
-import { SelectOptions } from '../../types'
+import { SelectOptions } from '../../../types'
 import { Field } from 'react-final-form'
 import { SelectInput } from '../../SelectInput'
 

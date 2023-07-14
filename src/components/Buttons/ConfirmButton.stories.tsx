@@ -1,6 +1,6 @@
 import { mdiTrashCanOutline } from '@mdi/js'
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { ConfirmButton } from './ConfirmButton'
 
 export default {

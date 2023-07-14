@@ -1,7 +1,7 @@
 /**
  * NB! There are custom styles at styles.scss
  */
-import React from 'react'
+
 import { Field } from 'react-final-form'
 import DatePicker, { getDefaultLocale } from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'

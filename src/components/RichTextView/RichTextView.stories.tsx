@@ -1,4 +1,3 @@
-import React from 'react'
 import { RichTextView } from './RichTextView'
 import { richTextData } from 'types/rich-text/rich-text.support.test'
 

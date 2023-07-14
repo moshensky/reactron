@@ -1,4 +1,4 @@
-import { RichText, RichText as RichTextT } from '../types'
+import { RichText, RichText as RichTextT } from '../../types'
 import { action } from '@storybook/addon-actions'
 import React, { useState } from 'react'
 import { DelayedData } from '../utils'

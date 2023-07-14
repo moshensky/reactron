@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { ToggleButton, ToggleButtonOptions } from './ToggleButton'
 
 const yesNoOptions: ToggleButtonOptions<'yes' | 'no'> = [

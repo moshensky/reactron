@@ -17,7 +17,7 @@ import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable'
 
 import { SortableItem } from './SortableItem'
 import { SortableList } from './SortableList'
-import { SortableGroup, SortableGroups, WithId } from '../types'
+import { SortableGroup, SortableGroups, WithId } from '../../types'
 
 type Props<T extends WithId> = {
   className?: string
@@ -140,7 +140,6 @@ export function SortableMultipleContainers<T extends WithId>({
         // We're at the root droppable of a container
         newIndex = overItems.items.length + 1
       } else {
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         const { top, height } = active.rect.current.translated!
         const isBelowLastItem =
           overIndex === overItems.items.length - 1 &&

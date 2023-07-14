@@ -1,5 +1,4 @@
-import React from 'react'
-import { MessageType } from '../types'
+import { MessageType } from '../../types'
 
 type Props = Readonly<{
   type: MessageType

@@ -43,7 +43,9 @@ export function VirtualizedList({
       if (applyMeasureDivStyle) {
         const styles = applyMeasureDivStyle()
         Object.keys(styles).forEach((key) => {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
+
           measureDiv.style[key] = styles[key]
         })
       } else {

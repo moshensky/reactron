@@ -1,7 +1,6 @@
-import { RichText, SelectOptions } from '../../types'
+import { RichText, SelectOptions } from '../../../types'
 import { ErrorMessage, Validator } from '../validate'
 import { FormApi } from 'final-form'
-import React from 'react'
 
 export type TextFieldVariant = 'text' | 'multiline' | 'password' | 'number'
 

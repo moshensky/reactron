@@ -1,10 +1,9 @@
-import React from 'react'
 import { pipe } from 'fp-ts/lib/function'
 import * as E from 'fp-ts/lib/Either'
 import { ValuePath, Validator } from './validate'
 import { isValid as dfIsValid, isDate } from 'date-fns'
 import { isNil, not } from '../utils'
-import { isRichTextEmpty, RichText } from '../types'
+import { isRichTextEmpty, RichText } from '../../types'
 
 function isEmpty(variable: unknown): boolean {
   if (variable === null) {
@@ -69,7 +68,6 @@ export const isNumberGreaterThan =
     isNotEmpty(value) && value > num
 
 export const isEmail = (value: any): boolean => {
-  // eslint-disable-next-line no-useless-escape
   const re =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   return isNotEmpty(value) && re.test(value)

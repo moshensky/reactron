@@ -1,7 +1,7 @@
 import { mdiTrashCanOutline } from '@mdi/js'
 import { action } from '@storybook/addon-actions'
 import { Button } from '../Buttons'
-import React from 'react'
+
 import { Popover } from './Popover'
 
 const trigger = (show: () => void) => (

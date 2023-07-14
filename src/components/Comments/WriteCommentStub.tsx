@@ -1,4 +1,3 @@
-import React from 'react'
 import { CardFooter } from '../Card'
 import { Input } from '../Input'
 import { Avatar } from './Avatar'

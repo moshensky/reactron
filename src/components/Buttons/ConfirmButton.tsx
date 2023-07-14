@@ -1,5 +1,5 @@
 import { Popover } from '../Popover'
-import React from 'react'
+
 import { Button, Props as ButtonProps } from './Button'
 
 type Props = ButtonProps &

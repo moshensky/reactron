@@ -1,5 +1,5 @@
 import { mdiClose, mdiMagnify } from '@mdi/js'
-import React from 'react'
+
 import { Button } from '../Buttons'
 import { FormDefinition, LWForm } from '../Form'
 import { TableFilter } from './TableFilter'

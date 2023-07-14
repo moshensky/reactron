@@ -1,6 +1,6 @@
-import { Guid } from '../types'
+import { Guid } from '../../types'
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 import { Comments } from './Comments'

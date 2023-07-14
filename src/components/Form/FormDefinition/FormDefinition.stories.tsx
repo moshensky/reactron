@@ -1,6 +1,6 @@
-import { RichText } from '../../types'
+import { RichText } from '../../../types'
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { ColumnSample } from './ColumnSample'
 import { RowSample } from './RowSample'
 import { UpdateCalibrationCertificatesForm } from './UpdateCalibrationCertificatesForm'

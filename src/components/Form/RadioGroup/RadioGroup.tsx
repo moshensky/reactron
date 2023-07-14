@@ -1,4 +1,3 @@
-import React from 'react'
 import cn from 'classnames'
 import { RequiredSymbol } from '../../RequiredSymbol'
 import { Field } from 'react-final-form'

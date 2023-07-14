@@ -1,4 +1,3 @@
-import React from 'react'
 import { createPopper, Instance } from '@popperjs/core'
 import './popover.css'
 import { useOnClickOutside } from 'hooks'

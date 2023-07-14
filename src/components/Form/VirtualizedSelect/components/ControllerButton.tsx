@@ -1,5 +1,3 @@
-import React from 'react'
-
 type Props = Readonly<{
   onClick: () => void
   right?: number

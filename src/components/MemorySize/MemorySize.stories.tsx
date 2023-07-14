@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { MemorySize } from './MemorySize'
 
 export default {

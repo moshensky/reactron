@@ -1,8 +1,8 @@
-import { RichText } from '../types'
+import { RichText } from '../../types'
 import { mdiNoteOutline } from '@mdi/js'
 import { FaIcon } from '../FaIcon'
 import { RichTextView } from '../RichTextView'
-import React from 'react'
+
 import { RichTextInputWithButtons } from '../Form/RichTextInputWithButtons/RichTextInputWithButtons'
 import { Tooltip } from '../Tooltip/Tooltip'
 

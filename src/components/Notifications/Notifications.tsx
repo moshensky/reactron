@@ -1,4 +1,3 @@
-import React from 'react'
 import { UINotification } from '.'
 
 type Props = {

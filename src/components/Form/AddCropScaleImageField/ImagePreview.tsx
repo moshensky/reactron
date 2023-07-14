@@ -1,7 +1,7 @@
 import { MemorySize } from '../../MemorySize'
 import { CropScaleImage } from '../../CropScaleImage'
 import { FileImagePreview } from '../../FileImagePreview'
-import React from 'react'
+
 import { DropImage } from './DropImage'
 
 type Props = {

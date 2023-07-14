@@ -1,7 +1,6 @@
-import React from 'react'
 import { EditableRichTextWithTooltip, Props } from './EditableRichTextWithTooltip'
 import { action } from '@storybook/addon-actions'
-import { mkRichText } from '../types'
+import { mkRichText } from '../../types'
 
 const baseProps: Props = {
   data: mkRichText('text'),

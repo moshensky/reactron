@@ -1,6 +1,6 @@
 import { mdiContentSaveOutline, mdiPlusThick, mdiTrashCanOutline } from '@mdi/js'
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { Button, Variant } from './Button'
 
 const variants: Variant[] = ['primary', 'secondary', 'success', 'danger', 'warning']

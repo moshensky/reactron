@@ -1,4 +1,3 @@
-import React from 'react'
 import { useSlate } from 'slate-react'
 import { Node, Transforms } from 'slate'
 import { mkCustomEditor } from './custom-editor'
@@ -13,7 +12,7 @@ import {
 import { ToolbarButton, ToolbarButtonProps } from './ToolbarButton'
 import { SymbolsButton } from './SymbolsButton'
 import { SuggestionsButton } from './SuggestionsButton'
-import { isRichTextEmpty, RichText } from '../types'
+import { isRichTextEmpty, RichText } from '../../types'
 
 type Props = Readonly<{
   suggestions?: RichText[]

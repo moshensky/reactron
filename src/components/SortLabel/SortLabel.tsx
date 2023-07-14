@@ -1,6 +1,6 @@
-import { SortDirection, SortItem } from '../types'
+import { SortDirection, SortItem } from '../../types'
 import { mdiSortAscending, mdiSortDescending } from '@mdi/js'
-import React from 'react'
+
 import { FaIcon } from '../FaIcon'
 
 type Props<T extends string> = Readonly<{

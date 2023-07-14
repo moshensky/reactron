@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react'
-import { MessageType } from '../types'
+import { MessageType } from '../../types'
 import cn from 'classnames'
 
 type Props = Readonly<{

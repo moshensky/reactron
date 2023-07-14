@@ -1,5 +1,3 @@
-import React from 'react'
-
 type Props = Readonly<{
   title?: React.ReactNode
   children?: React.ReactNode

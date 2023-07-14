@@ -3,7 +3,7 @@ import { FormDefinition } from './FormDefinition'
 import { requiredValidator } from '../common-validators'
 import { Button } from '../../Buttons'
 import { Card, CardBody } from '../../Card'
-import React from 'react'
+
 import { mdiClose, mdiMagnify } from '@mdi/js'
 import {
   FetchTechnicalToolsWorkLoadReportPayload,

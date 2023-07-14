@@ -1,5 +1,5 @@
 import { MemorySize } from '../MemorySize'
-import React from 'react'
+
 import { dataURLtoFile } from '../utils'
 
 import { CropperState, CropScaleImage } from './CropScaleImage'

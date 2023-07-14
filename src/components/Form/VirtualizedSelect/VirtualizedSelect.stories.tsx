@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions'
-import React from 'react'
+
 import { DelayedData } from '../../utils'
 import { StorybookForm } from '../StorybookForm.test.support'
 import { VirtualizedSelectElement } from './components/VirtualizedSelectElement'

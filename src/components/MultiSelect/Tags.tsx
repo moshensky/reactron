@@ -1,4 +1,3 @@
-import React from 'react'
 import { MultiselectOptions } from './types'
 import { Tag } from './Tag'
 
