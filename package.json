@@ -1,0 +1,19 @@
+{
+  "name": "@moshensky/reactron",
+  "version": "1.0.0",
+  "description": "reusable react bits, components, small utils and a like",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moshensky/reactron.git"
+  },
+  "author": "Nikita Moshenskiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moshensky/reactron/issues"
+  },
+  "homepage": "https://github.com/moshensky/reactron#readme"
+}
