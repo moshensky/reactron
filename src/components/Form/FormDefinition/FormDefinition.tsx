@@ -16,7 +16,7 @@ import arrayMutators from 'final-form-arrays'
 import { isNil, not } from '../../../utils'
 
 import { Form } from 'react-final-form'
-import { ArrayFormControl } from './ArrayFormControl'
+import { ArrayFormControlComp } from './ArrayFormControl'
 import { FormControl, IdWithName, LWForm, LWFormItemValidate, ViewType } from './types'
 import { SelectField } from '../SelectField'
 import { mdiContentSaveOutline, mdiPlusThick } from '@mdi/js'
@@ -247,7 +247,7 @@ export function renderForm(form: FormApi) {
       }
       case 'Array': {
         return (
-          <ArrayFormControl
+          <ArrayFormControlComp
             key={formControlName}
             {...item}
             form={form}

@@ -208,7 +208,7 @@ function renderRowViewType() {
   return <div>Not Implemented `row` render type for arrays!</div>
 }
 
-export function ArrayFormControl<T, K extends keyof T>(props: Props<T, K>) {
+export function ArrayFormControlComp<T, K extends keyof T>(props: Props<T, K>) {
   const { disableAddingOrDeletingElements, viewType, label, form, formControlName, mkEmpty } = props
   const allowAddingOrDeletingElements = disableAddingOrDeletingElements !== true
   const view =
